@@ -1,0 +1,42 @@
+* Listado de variables declaradas (tipo de dato y numero de linea):
+compartida: int, linea 7, columna 1
+a: unsigned int, linea 13, columna 5
+b: unsigned int, linea 13, columna 5
+c: unsigned int, linea 13, columna 5
+d: unsigned int, linea 13, columna 5
+e: const float, linea 14, columna 5
+f: const float, linea 14, columna 5
+i: int, linea 16, columna 9
+acumulador: float, linea 63, columna 5
+
+* Listado de funciones declaradas o definidas:
+imprimir: definicion, input: void, retorna: void, linea 1
+potencia: declaracion, input: float base, unsigned long, retorna: unsigned long, linea 8
+incremento: declaracion, input: int y, retorna: int, linea 9
+main: definicion, input: void, retorna: int, linea 12
+
+* Listado de errores semanticos:
+2:5: Funcion 'printf' sin declarar
+6:0: Redefinicion de 'imprimir'
+Nota: la definicion previa de 'imprimir' es de tipo 'void': 1:0
+10:0: conflicto de tipos para 'incremento'; la ultima es de tipo 'long'
+Nota: la declaracion previa de 'incremento' es de tipo 'int': 9:0
+14:32: Operandos invalidos del operador * (tienen 'unsigned long' y 'int')
+17:9: Funcion 'f' sin declarar
+19:13: 'c' sin declarar
+26:13: 'c' sin declarar
+30:13: 'e' sin declarar
+39:5: 'a' sin declarar
+43:0: Redefinicion de 'incremento'
+Nota: la definicion previa de 'incremento' es de tipo 'int': 9:0
+47:0: Redefinicion de 'incremento'
+Nota: la definicion previa de 'incremento' es de tipo 'int': 9:0
+62:0: conflicto de tipos para 'potencia'; la ultima es de tipo 'float'
+Nota: la declaracion previa de 'potencia' es de tipo 'unsigned long': 8:0
+
+* Listado de estructuras sintacticas no reconocidas:
+"c = a": linea 27
+
+* Listado de cadenas no reconocidas:
+@double: linea 30, columna 15
+
